@@ -4,14 +4,12 @@
     state: present
     update_cache: yes
 
-
 - name: pip3 install docker
   pip:
     name:
       - docker
       - docker-compose
     executable: pip3
-
 
 - name: run container
   docker_container:
